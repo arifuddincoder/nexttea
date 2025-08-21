@@ -5,9 +5,9 @@ import RegisterForm from "./sections/RegisterForm";
 import SocialLogin from "@/components/auth/SocialLogin";
 const page = () => {
 	return (
-		<div className="flex gap-16 max-w-7xl px-4 mx-auto items-center">
+		<div className="flex gap-16 max-w-7xl px-4 mx-auto items-center py-4">
 			<figure className="w-auto">
-				<Image src={"/assets/images/login/login.svg"} alt={"login image"} width={460} height={502} />
+				<Image src={"/assets/register/register.svg"} alt={"login image"} width={460} height={502} />
 			</figure>
 			<div className="p-18 border border-gray-300 rounded-lg w-[611px]">
 				<h1 className="text-center text-4xl font-semibold mb-10">Sign Up</h1>

@@ -4,14 +4,15 @@ import { Toaster } from "react-hot-toast";
 import SessionProviderWrapper from "@/components/SessionProviderWrapper";
 import SessionChecker from "@/components/auth/SessionChecker";
 import NavBar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const roboto = Inter({
 	subsets: ["latin"],
 });
 
 export const metadata = {
-	title: "Car Doctor",
-	description: "Affordable price for car servicing",
+	title: "Next Tea",
+	description: "Best tea in the world",
 };
 
 export default function RootLayout({ children }) {
@@ -22,7 +23,8 @@ export default function RootLayout({ children }) {
 					<SessionChecker />
 					<NavBar />
 					<Toaster position="top-right" />
-					{children}
+					<div className="min-h-[86vh]">{children}</div>
+					<Footer />
 				</SessionProviderWrapper>
 			</body>
 		</html>

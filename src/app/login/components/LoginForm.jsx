@@ -82,7 +82,7 @@ const LoginForm = () => {
 			<button
 				type="submit"
 				disabled={status === "loading" || status === "success"}
-				className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition"
+				className="w-full py-2 rounded text-white bg-[#305349]/90 hover:bg-[#305349] transition"
 			>
 				{buttonLabel}
 			</button>
