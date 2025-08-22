@@ -175,18 +175,6 @@ db.products.insertMany([
 
 ---
 
-## ⚠️ Notes
-
-- Optional enhancements (loader/toast/theme) are intentionally **omitted** for this submission.
-- If using `next/image` with external hosts (e.g., `i.ibb.co`, `res.cloudinary.com`), configure `next.config.js`:
-  ```js
-  module.exports = {
-    images: { domains: ["i.ibb.co", "res.cloudinary.com"] }
-  }
-  ```
-
----
-
 
 ## 👨‍💻 Developer Info
 
