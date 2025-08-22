@@ -12,13 +12,13 @@ const page = () => {
 			<div className="p-18 border border-gray-300 rounded-lg w-[611px]">
 				<h1 className="text-center text-4xl font-semibold mb-10">Login</h1>
 				<LoginForm></LoginForm>
-				<div className="mt-7 mb-12 text-center">
+				{/* <div className="mt-7 mb-12 text-center">
 					<p className="mb-4">Or Sign In with</p>
 					<SocialLogin />
-				</div>
-				<div className="text-center">
+				</div> */}
+				{/* <div className="text-center">
 					<a className="link link-hover">Forgot password?</a>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
