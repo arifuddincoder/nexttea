@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 async function getProducts() {
@@ -40,19 +41,23 @@ export default async function Home() {
 					<div className="grid gap-8 md:grid-cols-3">
 						{products.map((p, idx) => {
 							const oldPrice = Math.round((Number(p.price) * 1.33 + Number.EPSILON) * 100) / 100;
-							const highlight = idx === 1;
 							return (
 								<div
 									key={p._id}
 									className="rounded-lg shadow-sm p-6 text-center flex flex-col items-center bg-[#F6F6F6]"
 								>
-									<h3 className="text-xl font-semibold">{p.name}</h3>
+									<Link href={`/products/${p._id}`} className="group">
+										<h3 className="text-xl font-semibold group-hover:underline">{p.name}</h3>
+									</Link>
 
-									{p.image ? (
-										<img src={p.image} alt={p.name} className="h-44 w-auto object-contain mx-auto mb-4" />
-									) : (
-										<div className="h-44 w-full bg-gray-100 mb-4" />
-									)}
+									<Link href={`/products/${p._id}`} className="block w-full">
+										{p.image ? (
+											// eslint-disable-next-line @next/next/no-img-element
+											<img src={p.image} alt={p.name} className="h-44 w-auto object-contain mx-auto my-4" />
+										) : (
+											<div className="h-44 w-full bg-gray-100 my-4" />
+										)}
+									</Link>
 
 									<div className="mb-2">
 										<span className="line-through text-gray-400 mr-2">${oldPrice.toFixed(2)}</span>
@@ -60,11 +65,12 @@ export default async function Home() {
 									</div>
 									<p className="text-xs text-gray-500 mb-4">{p?.description}</p>
 
-									<button
-										className={`w-full py-2 rounded border cursor-pointer bg-[#305349]/90 text-white border-[#305349]/90 hover:bg-[#305349] `}
+									<Link
+										href={`/products/${p._id}`}
+										className="w-full py-2 rounded border text-center bg-[#305349]/90 text-white border-[#305349]/90 hover:bg-[#305349]"
 									>
-										Order Now
-									</button>
+										View Details
+									</Link>
 								</div>
 							);
 						})}
