@@ -187,6 +187,16 @@ db.products.insertMany([
 
 ---
 
+
+## 👨‍💻 Developer Info
+
+**Md Arif Uddin**  
+📧 arifuddincoder@gmail.com  
+🌐 [https://codebyarif.web.app](https://codebyarif.web.app)  
+🔗 [LinkedIn](https://linkedin.com/in/arifuddincoder) | [GitHub](https://github.com/arifuddincoder)
+
+---
+
 ## 📄 License
 
 MIT
