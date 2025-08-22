@@ -18,6 +18,11 @@ const NavBar = () => {
 			<li>
 				<Link href="/">Home</Link>
 			</li>
+			{status === "authenticated" && (
+				<li>
+					<Link href="/dashboard/add-product">Add Product</Link>
+				</li>
+			)}
 		</>
 	);
 
