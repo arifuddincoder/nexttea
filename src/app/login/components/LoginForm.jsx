@@ -35,7 +35,7 @@ const LoginForm = () => {
 			// Optional: delay before redirect
 			setTimeout(() => {
 				// router.push("/dashboard");
-				router.push("/");
+				router.push("/products");
 			}, 1000);
 		}
 	};
