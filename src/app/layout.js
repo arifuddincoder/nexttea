@@ -11,8 +11,9 @@ const roboto = Inter({
 });
 
 export const metadata = {
-	title: "Next Tea",
-	description: "Best tea in the world",
+	title: "Next Tea — Premium Green, Black & Oolong | Free Shipping & 100% Guarantee",
+	description:
+		"Shop handpicked green, black, and oolong teas. Fresh blends for every mood—with free shipping and a 100% money-back guarantee.",
 };
 
 export default function RootLayout({ children }) {

@@ -3,6 +3,13 @@ import React from "react";
 
 import LoginForm from "./components/LoginForm";
 import SocialLogin from "@/components/auth/SocialLogin";
+
+export const metadata = {
+	title: "Login — Next Tea",
+	description: "Sign in to your Next Tea account to manage orders, save favorites, and access your dashboard.",
+	robots: { index: false, follow: false },
+};
+
 const page = () => {
 	return (
 		<div className="flex gap-16 max-w-7xl px-4 mx-auto items-center py-4">

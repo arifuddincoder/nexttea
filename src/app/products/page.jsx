@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+export const metadata = {
+	title: "Shop All Teas — Green, Black & Oolong | Next Tea",
+	description:
+		"Browse all Next Tea products: handpicked green, black, and oolong teas with clear pricing, fast shipping, and a 100% money-back guarantee.",
+};
+
 async function getProducts() {
 	const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products`, { cache: "no-store" });
 	if (!res.ok) return [];

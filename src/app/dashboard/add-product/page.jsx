@@ -1,9 +1,14 @@
-// Server Component (কোনো "use client" নয়)
 import { redirect } from "next/navigation";
 import { getServerSession } from "next-auth";
-// import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import AddProductForm from "./AddProductForm";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+
+export const metadata = {
+	title: "Add Product — Dashboard | Next Tea",
+	description:
+		"Add a new tea product—name, description, price, and image—to the Next Tea catalog. Accessible to signed-in users only.",
+	robots: { index: false, follow: false },
+};
 
 export default async function AddProductPage() {
 	const session = await getServerSession(authOptions);
