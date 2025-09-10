@@ -117,7 +117,7 @@ MongoDB Atlas: ensure your IP/connection is allowed under **Network Access**.
 ## 🧪 Quick Test Plan
 
 - `/` — Hero + Product Highlights
-- `/login` — sign in (Google/GitHub/Credentials); success → `/products`
+- `/login` — Login (Google/GitHub/Credentials); success → `/products`
 - `/products` — lists products from MongoDB
 - `/products/[id]` — details page
 - `/dashboard/add-product` — redirects to `/login` if not signed in; otherwise shows form

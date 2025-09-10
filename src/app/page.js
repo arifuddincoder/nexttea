@@ -63,7 +63,7 @@ export default async function Home() {
 										<span className="line-through text-gray-400 mr-2">${oldPrice.toFixed(2)}</span>
 										<span className="text-lg font-bold">${Number(p.price).toFixed(2)}</span>
 									</div>
-									<p className="text-xs text-gray-500 mb-4">{p?.description}</p>
+									<p className="text-xs text-gray-500 mb-4">{p?.description.split(" ").slice(0, 12).join(" ")}</p>
 
 									<Link
 										href={`/products/${p._id}`}
